@@ -1,3 +1,5 @@
+import java.util.Random;
+
 class Alarm{
     String alarmId;
 
@@ -97,6 +99,19 @@ class ContolPanel{
 
 public class Example {
     public static void main(String[] args) {
+        ContolPanel contolPanel=new ContolPanel();
 
+        contolPanel.setAlarm(new Alarm("Alarm 1"));
+        contolPanel.setDisplay(new Display());
+        contolPanel.setSmsManager(new SMSManager());
+
+
+        Random random=new Random();
+        int randomNumber= random.nextInt();
+
+
+        while (true){
+            contolPanel.setData(randomNumber);
+        }
     }
 }
