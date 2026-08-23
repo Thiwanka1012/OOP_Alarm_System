@@ -1,12 +1,16 @@
 class Alarm{
-    String alrmId;
+    String alarmId;
 
     public Alarm(String alrmId) {
-        this.alrmId = alrmId;
+        this.alarmId = alrmId;
     }
 
     public void triggerAlarm(int waterLevel){
-
+        if (waterLevel>=50){
+            System.out.println("Alarm"+alarmId+"On");
+        }else {
+            System.out.println("Alarm"+alarmId+"Off");
+        }
     }
 }
 
