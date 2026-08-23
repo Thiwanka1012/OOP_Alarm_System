@@ -34,6 +34,15 @@ class ContolPanel{
     private Display display;
     private SMSManager smsManager;
 
+    public ContolPanel() {
+    }
+
+    public ContolPanel(Alarm alarm, Display display, SMSManager smsManager) {
+        this.alarm = alarm;
+        this.display = display;
+        this.smsManager = smsManager;
+    }
+
     public Alarm getAlarm() {
         return alarm;
     }
