@@ -30,7 +30,9 @@ class SMSManager{
 }
 
 class ContolPanel{
-    
+    Alarm alarm;
+    Display display;
+    SMSManager smsManager;
 }
 
 
