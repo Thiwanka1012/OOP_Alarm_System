@@ -1,6 +1,9 @@
 class Alarm{
     String alrmId;
 
+    public Alarm(String alrmId) {
+        this.alrmId = alrmId;
+    }
 }
 
 
