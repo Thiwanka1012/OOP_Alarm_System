@@ -33,14 +33,16 @@ class ContolPanel{
     private Alarm alarm;
     private Display display;
     private SMSManager smsManager;
+    private int waterLevel;
 
     public ContolPanel() {
     }
 
-    public ContolPanel(Alarm alarm, Display display, SMSManager smsManager) {
+    public ContolPanel(Alarm alarm, Display display, SMSManager smsManager , int waterLevel) {
         this.alarm = alarm;
         this.display = display;
         this.smsManager = smsManager;
+        this.waterLevel=waterLevel;
     }
 
     public Alarm getAlarm() {
@@ -66,6 +68,21 @@ class ContolPanel{
     public void setSmsManager(SMSManager smsManager) {
         this.smsManager = smsManager;
     }
+
+    public int getWaterLevel() {
+        return waterLevel;
+    }
+
+    public void setWaterLevel(int waterLevel) {
+        this.waterLevel = waterLevel;
+    }
+
+
+    public void notifyObject(){
+        this.alarm.triggerAlarm(waterLevel);
+    }
+
+
 }
 
 
