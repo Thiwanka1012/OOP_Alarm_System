@@ -114,6 +114,14 @@ public class Example {
             Random random=new Random();
             int randomNumber= random.nextInt(101);
             contolPanel.setData(randomNumber);
+
+
+            try {
+                Thread.sleep(1000);
+            }catch (Exception e){
+                System.out.println(e);
+            }
+            System.out.println("==================");
         }
     }
 }
