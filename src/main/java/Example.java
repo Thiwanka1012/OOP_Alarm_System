@@ -24,7 +24,7 @@ class Display{
 
 
 class SMSManager{
-    public void smsManager(int waterLevel){
+    public void sendSms(int waterLevel){
         System.out.println("Water Level is:"+waterLevel);
     }
 }
@@ -80,6 +80,8 @@ class ContolPanel{
 
     public void notifyObject(){
         this.alarm.triggerAlarm(waterLevel);
+        this.display.showWaterLevel(waterLevel);
+        this.smsManager.sendSms(waterLevel);
     }
 
 
