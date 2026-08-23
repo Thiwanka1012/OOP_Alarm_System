@@ -16,6 +16,13 @@ class Alarm{
 
 
 
+class Display{
+    public void showWaterLevel(int waterLevel){
+        System.out.println("Water level is:"+waterLevel);
+    }
+}
+
+
 public class Example {
     public static void main(String[] args) {
 
