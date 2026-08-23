@@ -107,11 +107,12 @@ public class Example {
         contolPanel.setSmsManager(new SMSManager());
 
 
-        Random random=new Random();
-        int randomNumber= random.nextInt();
+
 
 
         while (true){
+            Random random=new Random();
+            int randomNumber= random.nextInt(101);
             contolPanel.setData(randomNumber);
         }
     }
