@@ -29,6 +29,10 @@ class SMSManager{
     }
 }
 
+class ContolPanel{
+    
+}
+
 
 public class Example {
     public static void main(String[] args) {
