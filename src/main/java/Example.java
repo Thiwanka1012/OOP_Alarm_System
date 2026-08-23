@@ -30,9 +30,33 @@ class SMSManager{
 }
 
 class ContolPanel{
-    Alarm alarm;
-    Display display;
-    SMSManager smsManager;
+    private Alarm alarm;
+    private Display display;
+    private SMSManager smsManager;
+
+    public Alarm getAlarm() {
+        return alarm;
+    }
+
+    public void setAlarm(Alarm alarm) {
+        this.alarm = alarm;
+    }
+
+    public Display getDisplay() {
+        return display;
+    }
+
+    public void setDisplay(Display display) {
+        this.display = display;
+    }
+
+    public SMSManager getSmsManager() {
+        return smsManager;
+    }
+
+    public void setSmsManager(SMSManager smsManager) {
+        this.smsManager = smsManager;
+    }
 }
 
 
