@@ -89,6 +89,7 @@ class ContolPanel{
 
     public void setData(int waterLevel){
         if (this.waterLevel!=waterLevel){
+            this.waterLevel=waterLevel;
             notifyObject();
         }
     }
