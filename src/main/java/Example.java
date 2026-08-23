@@ -4,6 +4,10 @@ class Alarm{
     public Alarm(String alrmId) {
         this.alrmId = alrmId;
     }
+
+    public void triggerAlarm(int waterLevel){
+
+    }
 }
 
 
