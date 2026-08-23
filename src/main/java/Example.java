@@ -23,6 +23,13 @@ class Display{
 }
 
 
+class SMSManager{
+    public void smsManager(int waterLevel){
+        System.out.println("Water Level is:"+waterLevel);
+    }
+}
+
+
 public class Example {
     public static void main(String[] args) {
 
